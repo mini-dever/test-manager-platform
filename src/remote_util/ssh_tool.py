@@ -18,9 +18,7 @@ class ssh_tool:
         out=stdout.readlines()
         err=stderr.readlines()
         self.client.close()
-
-        # if len(err):
-        #     print("error")
+        
         return out,err
 
 # if __name__=="__main__":
