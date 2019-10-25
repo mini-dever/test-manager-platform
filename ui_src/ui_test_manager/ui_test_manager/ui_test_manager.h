@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
-#include "ui_ui_test_manager.h"
+#include <ui_ui_test_manager.h>
 
 class ui_test_manager : public QMainWindow
 {
