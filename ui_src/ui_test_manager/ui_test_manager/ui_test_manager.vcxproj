@@ -89,6 +89,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UITools.cpp" />
     <ClCompile Include="ui_test_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="ui_test_manager.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="UITools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

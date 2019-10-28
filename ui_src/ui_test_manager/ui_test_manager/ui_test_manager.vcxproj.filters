@@ -31,6 +31,9 @@
     <ClCompile Include="ui_test_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UITools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="ui_test_manager.ui">
@@ -46,5 +49,11 @@
     <QtMoc Include="ui_test_manager.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="UITools.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
