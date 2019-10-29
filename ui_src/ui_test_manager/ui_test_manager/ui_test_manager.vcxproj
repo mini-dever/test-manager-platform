@@ -88,6 +88,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="input_dialog.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UITools.cpp" />
     <ClCompile Include="ui_test_manager.cpp" />
@@ -96,9 +97,11 @@
     <QtMoc Include="ui_test_manager.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="input_dialog.ui" />
     <QtUic Include="ui_test_manager.ui" />
   </ItemGroup>
   <ItemGroup>
+    <QtRcc Include="input_dialog.qrc" />
     <QtRcc Include="ui_test_manager.qrc" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="input_dialog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -1,5 +1,6 @@
 #pragma once
 #include <QObject>
+#include <QtWidgets/QMainWindow>
 namespace UITest
 {
 	class UITools : public QObject
@@ -10,8 +11,10 @@ namespace UITest
 		void ClickNewFileButton();
 		void ClickSaveButton();
 
+		void SetParentFrame(QObject* obj);
 	private:
 		QString  _root_path; // 根目录
 		QString  _cur_select_path; // 当前选择的目录
+		QMainWindow* _parent_frame; // 父页面
 	};
 }

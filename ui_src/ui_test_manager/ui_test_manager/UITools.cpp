@@ -1,7 +1,8 @@
 #include <QMessageBox>
 #include <QFileDialog>
-#include <QLineEdit>
+#include <QTextEdit>
 #include "UITools.h"
+#include "input_dialog.h"
 
 namespace UITest
 {
@@ -26,12 +27,24 @@ namespace UITest
 		{
 			user_path = _root_path;
 		}
-		QLineEdit* lien_edit = new QLineEdit("123");
-		
+		input_dialog*textEdit = new input_dialog();
+		//textEdit->setGeometry(QRect(150, 100, 200, 200));
+		textEdit->_cur_path = user_path;
+		textEdit->exec();
+		QString name = textEdit->_text;
+		delete textEdit;
+		textEdit = nullptr;
+
+
 	}
 
 	void UITools::ClickSaveButton()
 	{
 
+	}
+
+	void UITools::SetParentFrame(QObject* obj)
+	{
+		_parent_frame = (QMainWindow*)obj;
 	}
 }
