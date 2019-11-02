@@ -7,6 +7,8 @@ ui_test_manager::ui_test_manager(QWidget *parent)
 {
 	ui.setupUi(this);
 	_ui_tools = new UITest::UITools();
+	_ui_file_folder_manager = new UITest::file_folder_manager(ui.treeView);
+
 	_ui_tools->SetParentFrame(this);
 	bool c1 = connect(ui.button_open_folder, SIGNAL(clicked()), _ui_tools, SLOT(ClickOpenFolderButton()));
 	bool c2 = connect(ui.button_new_file, SIGNAL(clicked()), _ui_tools, SLOT(ClickNewFileButton()));

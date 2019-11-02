@@ -88,6 +88,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="common_icon.cpp" />
+    <ClCompile Include="file_folder_manager.cpp" />
     <ClCompile Include="input_dialog.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UITools.cpp" />
@@ -112,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="input_dialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="file_folder_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common_icon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
