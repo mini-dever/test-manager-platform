@@ -9,7 +9,7 @@ namespace UITest
 	{
 		_tree_view = tree_view;
 		_model = new QStandardItemModel(_tree_view);
-		_model->setHorizontalHeaderLabels(QStringList() << QStringLiteral("文件名"));
+		_model->setHorizontalHeaderLabels(QStringList() << QStringLiteral("文件目录"));
 
 		_tree_view->setModel(_model);
 	}

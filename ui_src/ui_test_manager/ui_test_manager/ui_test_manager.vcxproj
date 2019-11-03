@@ -95,6 +95,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ui_test_manager.cpp" />
     <ClCompile Include="ui_tools.cpp" />
+    <ClCompile Include="use_case_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ui_test_manager.h" />
@@ -119,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="app_setting_config.h" />
     <ClInclude Include="common_icon.h" />
+    <ClInclude Include="use_case_manager.h" />
     <QtMoc Include="ui_tools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

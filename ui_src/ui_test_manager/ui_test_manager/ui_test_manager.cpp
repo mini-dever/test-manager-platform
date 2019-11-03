@@ -7,11 +7,12 @@ ui_test_manager::ui_test_manager(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-	
+
 	config::app_setting_config::LoadAppConfigFile();
 
 	_ui_tools = new UITest::ui_tools();
 	_ui_file_folder_manager = new UITest::file_folder_manager(ui.treeView);
+	_ui_use_case_manager = new UITest::use_case_manager(ui.listView);
 
 	_ui_tools->SetParentFrame(this);
 	bool c1 = connect(ui.button_open_folder, SIGNAL(clicked()), _ui_tools, SLOT(ClickOpenFolderButton()));
