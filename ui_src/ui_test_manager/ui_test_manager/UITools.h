@@ -12,6 +12,7 @@ namespace UITest
 		void ClickSaveButton();
 
 		void SetParentFrame(QObject* obj);
+		void SendSingal(QString path);
 	signals:
 		void RootPathValueChanged(QString root_path);
 	public:

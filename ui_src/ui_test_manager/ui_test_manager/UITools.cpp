@@ -3,6 +3,7 @@
 #include <QTextEdit>
 #include "UITools.h"
 #include "input_dialog.h"
+#include "app_setting_config.h"
 
 namespace UITest
 {
@@ -14,6 +15,14 @@ namespace UITest
 		_root_path = QFileDialog::getExistingDirectory( nullptr, caption, dir);
 	
 		// 发送信号，左边根目录切换到相应文件树
+		SendSingal(_root_path);
+	}
+
+	void UITools::SendSingal(QString path)
+	{
+		_root_path = path;
+		config::app_setting_config::GetConfigData()->_select_path = _root_path;
+		config::app_setting_config::SaveFile();
 		emit RootPathValueChanged(_root_path);
 	}
 

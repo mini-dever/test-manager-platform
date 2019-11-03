@@ -43,6 +43,9 @@
     <ClCompile Include="common_icon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="app_setting_config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="ui_test_manager.ui">
@@ -79,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common_icon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="app_setting_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,11 +1,15 @@
 #include "ui_test_manager.h"
 #include "UITools.h"
+#include "app_setting_config.h"
 #include <QMessageBox>
 
 ui_test_manager::ui_test_manager(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
+	
+	config::app_setting_config::LoadAppConfigFile();
+
 	_ui_tools = new UITest::UITools();
 	_ui_file_folder_manager = new UITest::file_folder_manager(ui.treeView);
 
@@ -17,6 +21,14 @@ ui_test_manager::ui_test_manager(QWidget *parent)
 	// 连接root_path变化槽
 	bool c4 = connect(_ui_tools, SIGNAL(RootPathValueChanged(QString)), _ui_file_folder_manager, SLOT(OnChangeRootPath(QString)));
 
-	_ui_tools->ClickOpenFolderButton();
+	// todo 查找配置文件
+	if (config::app_setting_config::GetConfigData()->_select_path.isEmpty())
+	{
+		_ui_tools->ClickOpenFolderButton();
+	}
+	else
+	{
+		_ui_tools->SendSingal(config::app_setting_config::GetConfigData()->_select_path);
+	}
 }
 
