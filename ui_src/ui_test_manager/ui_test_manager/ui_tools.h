@@ -3,7 +3,7 @@
 #include <QtWidgets/QMainWindow>
 namespace UITest
 {
-	class UITools : public QObject
+	class ui_tools : public QObject
 	{
 		Q_OBJECT
 	public slots:

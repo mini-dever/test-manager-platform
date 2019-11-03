@@ -1,5 +1,5 @@
 #include "ui_test_manager.h"
-#include "UITools.h"
+#include "ui_tools.h"
 #include "app_setting_config.h"
 #include <QMessageBox>
 
@@ -10,7 +10,7 @@ ui_test_manager::ui_test_manager(QWidget *parent)
 	
 	config::app_setting_config::LoadAppConfigFile();
 
-	_ui_tools = new UITest::UITools();
+	_ui_tools = new UITest::ui_tools();
 	_ui_file_folder_manager = new UITest::file_folder_manager(ui.treeView);
 
 	_ui_tools->SetParentFrame(this);

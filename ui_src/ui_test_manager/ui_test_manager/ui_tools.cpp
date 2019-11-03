@@ -1,13 +1,13 @@
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QTextEdit>
-#include "UITools.h"
+#include "ui_tools.h"
 #include "input_dialog.h"
 #include "app_setting_config.h"
 
 namespace UITest
 {
-	void UITools::ClickOpenFolderButton()
+	void ui_tools::ClickOpenFolderButton()
 	{
 		QString caption;
 		QString dir;
@@ -18,7 +18,7 @@ namespace UITest
 		SendSingal(_root_path);
 	}
 
-	void UITools::SendSingal(QString path)
+	void ui_tools::SendSingal(QString path)
 	{
 		_root_path = path;
 		config::app_setting_config::GetConfigData()->_select_path = _root_path;
@@ -26,7 +26,7 @@ namespace UITest
 		emit RootPathValueChanged(_root_path);
 	}
 
-	void UITools::ClickNewFileButton()
+	void ui_tools::ClickNewFileButton()
 	{
 		if (_cur_select_path.isEmpty() && _root_path.isEmpty())
 		{
@@ -48,12 +48,12 @@ namespace UITest
 
 	}
 
-	void UITools::ClickSaveButton()
+	void ui_tools::ClickSaveButton()
 	{
 		
 	}
 
-	void UITools::SetParentFrame(QObject* obj)
+	void ui_tools::SetParentFrame(QObject* obj)
 	{
 		_parent_frame = (QMainWindow*)obj;
 	}
