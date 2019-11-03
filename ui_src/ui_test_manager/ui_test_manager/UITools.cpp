@@ -12,8 +12,9 @@ namespace UITest
 		QString dir;
 
 		_root_path = QFileDialog::getExistingDirectory( nullptr, caption, dir);
-
-		// tode 左边根目录切换到相应文件树
+	
+		// 发送信号，左边根目录切换到相应文件树
+		emit RootPathValueChanged(_root_path);
 	}
 
 	void UITools::ClickNewFileButton()

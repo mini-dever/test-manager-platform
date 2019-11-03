@@ -14,6 +14,9 @@ ui_test_manager::ui_test_manager(QWidget *parent)
 	bool c2 = connect(ui.button_new_file, SIGNAL(clicked()), _ui_tools, SLOT(ClickNewFileButton()));
 	bool c3 = connect(ui.button_save, SIGNAL(clicked()), _ui_tools, SLOT(ClickSaveButton()));
 
+	// 连接root_path变化槽
+	bool c4 = connect(_ui_tools, SIGNAL(RootPathValueChanged(QString)), _ui_file_folder_manager, SLOT(OnChangeRootPath(QString)));
+
 	_ui_tools->ClickOpenFolderButton();
 }
 

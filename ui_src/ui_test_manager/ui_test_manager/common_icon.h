@@ -12,7 +12,8 @@ private:
 
 	void Init()
 	{
-		_icon_map[QStringLiteral("treeItem_folder")] = QIcon(QStringLiteral("Resources/FileFolder.png"));
+		_icon_map[QStringLiteral("tree_item_folder")] = QIcon(QStringLiteral("Resources/FileFolder.png"));
+		_icon_map[QStringLiteral("tree_item_file")] = QIcon(QStringLiteral("Resources/File.png.png"));
 	}
 public:
 	static commom_icon* get_instance()

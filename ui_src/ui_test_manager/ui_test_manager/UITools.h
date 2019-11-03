@@ -12,7 +12,9 @@ namespace UITest
 		void ClickSaveButton();
 
 		void SetParentFrame(QObject* obj);
-	private:
+	signals:
+		void RootPathValueChanged(QString root_path);
+	public:
 		QString  _root_path; // 根目录
 		QString  _cur_select_path; // 当前选择的目录
 		QMainWindow* _parent_frame; // 父页面
