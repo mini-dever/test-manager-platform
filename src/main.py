@@ -9,7 +9,10 @@ import base
 import case
 import unittest
 import json
-import requests
+import requests 
+
+
+
 
 def run_sql(sql_db,sql_conf):
     for i in sql_conf.db_infos:
