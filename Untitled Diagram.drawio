@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-18T02:24:14.174Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="hDReIHe4f4rYWDc9hTko" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-18T02:25:07.897Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="NdDqcnSAxvnDcnEYYWwY" version="17.4.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1662" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
             <mxPoint x="860" y="179.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SaABwUhrj3bs7LN9KGiQ-23" value="保存设备消息后返回" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=1.4;exitY=0.838;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SaABwUhrj3bs7LN9KGiQ-20" target="SaABwUhrj3bs7LN9KGiQ-11">
+        <mxCell id="SaABwUhrj3bs7LN9KGiQ-23" value="保存设备消息后返回，并维持心跳" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=1.4;exitY=0.838;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SaABwUhrj3bs7LN9KGiQ-20" target="SaABwUhrj3bs7LN9KGiQ-11">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="830" y="260" as="sourcePoint" />
             <mxPoint x="750" y="260" as="targetPoint" />
