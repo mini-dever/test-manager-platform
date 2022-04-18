@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-18T02:29:52.401Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="4Xxmdc-wiWRjZYMc2WV4" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-18T02:30:18.277Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="49gwMH5oZ6HWYrAfOJj6" version="17.4.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1662" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,16 +32,16 @@
         <mxCell id="SaABwUhrj3bs7LN9KGiQ-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="SaABwUhrj3bs7LN9KGiQ-11">
           <mxGeometry x="45" y="70" width="10" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="SaABwUhrj3bs7LN9KGiQ-17" value="上线消息" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SaABwUhrj3bs7LN9KGiQ-12" target="SaABwUhrj3bs7LN9KGiQ-10">
+        <mxCell id="SaABwUhrj3bs7LN9KGiQ-17" value="上线消息" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SaABwUhrj3bs7LN9KGiQ-12">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="780" y="179.5" as="sourcePoint" />
-            <mxPoint x="860" y="179.5" as="targetPoint" />
+            <mxPoint x="710" y="195" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SaABwUhrj3bs7LN9KGiQ-23" value="保存设备消息后返回，并维持心跳" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=1.4;exitY=0.838;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SaABwUhrj3bs7LN9KGiQ-20" target="SaABwUhrj3bs7LN9KGiQ-11">
+        <mxCell id="SaABwUhrj3bs7LN9KGiQ-23" value="保存设备消息后返回，并维持心跳" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=1.4;exitY=0.838;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="SaABwUhrj3bs7LN9KGiQ-20">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="830" y="260" as="sourcePoint" />
-            <mxPoint x="750" y="260" as="targetPoint" />
+            <mxPoint x="960" y="252" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SaABwUhrj3bs7LN9KGiQ-31" value="返回设备信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
